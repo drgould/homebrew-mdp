@@ -3,7 +3,7 @@ cask "mdp" do
   name "mdp"
   desc "Multi-dev proxy — run multiple dev servers behind one port"
   homepage "https://github.com/drgould/multi-dev-proxy"
-  version "0.1.1"
+  version "1.0.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "mdp" do
   on_macos do
     on_intel do
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v#{version}/mdp_darwin_amd64.tar.gz"
-      sha256 "941f487aef16c8afb5cd8acb248ae2fcca40204eaf30f8e6f61e80730ef02a57"
+      sha256 "90cf26fb625db050e95ea760ec65089b0b942ae1b3c55786d4f12305518a5aa0"
     end
     on_arm do
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v#{version}/mdp_darwin_arm64.tar.gz"
-      sha256 "c504b755ee3238394811ec2981204220043e02dec0fc61766ce5a891c7d94cc4"
+      sha256 "f4e15ff2fc98f466c6b88b4d9594340c0a0365cffa47ff3f44d72b20867a2b04"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v#{version}/mdp_linux_amd64.tar.gz"
-      sha256 "d45d1c389655592018382c199cf5c02da8dc8566aa0207a0fa5eb96c65653593"
+      sha256 "75ac643a3488531567a95767594c4115cdf12444eab3b9594a159373fc935caa"
     end
     on_arm do
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v#{version}/mdp_linux_arm64.tar.gz"
-      sha256 "176c5e745271cb499fcd5f5839a3fc7ccd36279efd0872c2615ee65e1537801d"
+      sha256 "ced2c671eb6e7618701e923fd9ae80d3b39b0a2d198cf07e946efe194bcb6163"
     end
   end
 
