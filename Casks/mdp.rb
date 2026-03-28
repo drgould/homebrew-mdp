@@ -14,22 +14,22 @@ cask "mdp" do
   on_macos do
     on_intel do
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v#{version}/mdp_darwin_amd64.tar.gz"
-      sha256 "c60006b7990a6bf15fbd445fc993741bce47c1aef7b0a4421f25d13acd089d56"
+      sha256 "400355e64d6b8159dd4c11b2eeab2e04b4b98006f595f1ba1ece695f3c5ba695"
     end
     on_arm do
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v#{version}/mdp_darwin_arm64.tar.gz"
-      sha256 "0e64a3c367c385cd59b811e6d6e71d110d101609a730ead58e495c109a5b6479"
+      sha256 "3ea6944b8971d588ff85a4a6f8616c4430eae63cfe29d4103d22de55f5110815"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v#{version}/mdp_linux_amd64.tar.gz"
-      sha256 "d54ed45d92f9b8fdd232f01f1e295118ed2000c6d439eeb7e400cb2f79dc13bb"
+      sha256 "45a50f9cf30bf95afb7666d08f4987d456428f227a9edde97e4c8c4bf302cf63"
     end
     on_arm do
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v#{version}/mdp_linux_arm64.tar.gz"
-      sha256 "c29b4856a0441fabaf91a96b460f7a487443a8f41dfb716d4899bf7f627590c3"
+      sha256 "458c763e4efa38cf6e9ca5ba081b5f431242438e38355c9a6949e6b4bd225754"
     end
   end
 
