@@ -5,21 +5,21 @@
 class Mdp < Formula
   desc "Multi-dev proxy — run multiple dev servers behind one port"
   homepage "https://github.com/drgould/multi-dev-proxy"
-  version "1.1.1"
+  version "1.1.2"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.1/mdp_darwin_amd64.tar.gz"
-      sha256 "73677dbc4efea5162f4da6806a5ca71184c1da4bb06073d5a72bf1ececded843"
+      url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.2/mdp_darwin_amd64.tar.gz"
+      sha256 "0aa27efcab723aa00c28c1f462617406492acfbae1a86d207d68f3833b43f657"
 
       define_method(:install) do
         bin.install "mdp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.1/mdp_darwin_arm64.tar.gz"
-      sha256 "9ade1a2847d14e66bbb930484d71de030d03665dc05cde51599742bb61d42974"
+      url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.2/mdp_darwin_arm64.tar.gz"
+      sha256 "96134306c88f188baf17712aeef41a02a7431155e7d92c47d10d7bf3b616f758"
 
       define_method(:install) do
         bin.install "mdp"
@@ -29,15 +29,15 @@ class Mdp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.1/mdp_linux_amd64.tar.gz"
-      sha256 "4d0e0a1ad5437f473571a0bfecbd7f77729eddf08c5f50ff2cbac8bcade4b243"
+      url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.2/mdp_linux_amd64.tar.gz"
+      sha256 "df0d6b7280951805bbd58c67364454d9691a68db0c420144cb30023f81f84021"
       define_method(:install) do
         bin.install "mdp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.1/mdp_linux_arm64.tar.gz"
-      sha256 "d5ad704dc11fb7450d8fcb1f3b71153168f1a9daf1be866dd247e179cb8ceab8"
+      url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.2/mdp_linux_arm64.tar.gz"
+      sha256 "86dfc72e36793f466b89888946292aa76c6af0f5f1f2adfacfa84b025abe39f6"
       define_method(:install) do
         bin.install "mdp"
       end
