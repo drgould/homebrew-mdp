@@ -11,7 +11,7 @@ class Mdp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.1/mdp_darwin_amd64.tar.gz"
-      sha256 "8dfd420bde96d0be0f7c77969faabbd126db116f35be02d4f2571636a5982a08"
+      sha256 "73677dbc4efea5162f4da6806a5ca71184c1da4bb06073d5a72bf1ececded843"
 
       define_method(:install) do
         bin.install "mdp"
@@ -19,7 +19,7 @@ class Mdp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.1/mdp_darwin_arm64.tar.gz"
-      sha256 "1ed91dd4cb2275ff9048ae246e3d47c2333e3a7e37577292376dec147f63701a"
+      sha256 "9ade1a2847d14e66bbb930484d71de030d03665dc05cde51599742bb61d42974"
 
       define_method(:install) do
         bin.install "mdp"
@@ -30,14 +30,14 @@ class Mdp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.1/mdp_linux_amd64.tar.gz"
-      sha256 "fbe29e323b42de4328b4df3e4e957ece0bbe5621a3084ef6b5bdb69a3f0fc6bf"
+      sha256 "4d0e0a1ad5437f473571a0bfecbd7f77729eddf08c5f50ff2cbac8bcade4b243"
       define_method(:install) do
         bin.install "mdp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/drgould/multi-dev-proxy/releases/download/v1.1.1/mdp_linux_arm64.tar.gz"
-      sha256 "105b2f7786d0eea76fd5c4892d5fc7ebfe1365bb1061fc32e9573d7fe8c7dccb"
+      sha256 "d5ad704dc11fb7450d8fcb1f3b71153168f1a9daf1be866dd247e179cb8ceab8"
       define_method(:install) do
         bin.install "mdp"
       end
