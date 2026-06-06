@@ -4,18 +4,12 @@ Homebrew tap for [mdp](https://github.com/drgould/multi-dev-proxy).
 
 ## Install
 
-On macOS or Linux:
-
-```sh
-brew install drgould/mdp/mdp
-```
-
-This installs the formula. On macOS you can opt in to the cask instead, which strips the Gatekeeper quarantine attribute via a `postflight`:
+On macOS:
 
 ```sh
 brew install --cask drgould/mdp/mdp
 ```
 
-Both ship the same binary.
+The cask strips the Gatekeeper quarantine attribute via a `postflight`.
 
-Cask and formula definitions are updated by GoReleaser on release.
+The cask definition is updated by GoReleaser on release.
